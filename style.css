@@ -1,0 +1,214 @@
+:root {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: "Norse";
+    src: url(/fonts/Norse-Bold.otf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+}
+
+#left {
+    position: relative;
+    /* border: 1px solid red; */
+    height: 100vh;
+    width: 35%;
+    background: url(/images/halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    height: 18%;
+    margin-top: 25%;
+    background-color: rgba(0, 0, 0, .6); 
+    /* border: 1px solid red; */
+    color: white;
+    font-family: "Norse";
+    font-size: 3rem;
+}
+
+#odin-logo {
+    max-height: 100%;
+    padding: .5rem 0;
+}
+
+#image-credit {
+    color: white;
+    font-size: .6rem;
+    /* border: 1px solid yellow; */
+    width: 33%;
+    height: 1.5rem;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+}
+
+#image-credit a {
+    color: white;
+}
+
+#image-credit a:hover {
+    opacity: .7;
+}
+
+#right {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid blue; */
+    height: 100vh;
+    width: 65%;
+}
+
+#top {
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 35%;
+    /* border: 1px solid purple; */
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.content-container {
+    width: 60%;
+    margin-left: 5%;
+    /* border: 1px solid red; */
+}
+
+#top .content-container {
+    margin-top: 5%;
+}
+
+#top .content-container p:last-child {
+    margin-top: 5%;
+}
+
+#middle {
+    height: 30%;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid orange; */
+    box-shadow: 0px 12px 10px -15px rgb(156, 156, 156);
+    z-index: 2;
+}
+
+#form-container {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: 90%;
+    margin-left: 5%;
+    margin-right: 0;
+    /* border: 1px solid red; */
+}
+
+#form-container p {
+    font-weight: 700;
+}
+
+form {
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+}
+
+form label {
+    color: rgb(85, 85, 85);
+    font-size: .45rem;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    margin-bottom: .1rem;
+}
+
+form input {
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
+    width: 180px;
+    font-size: .6rem;
+    padding: .25rem 6px;
+}
+
+form .input:nth-child(even) {
+    margin-right: 0;
+}
+
+form input:focus {
+    outline: none;
+    border: 1px solid rgb(115, 144, 223);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+    margin-right: 64px;
+}
+
+.error {
+    border: 1px solid red;
+}
+
+.password {
+    position: relative;
+}
+
+.password::before {
+    content: "* Passwords do not match";
+    position: absolute;
+    color: red;
+    font-size: .5rem;
+    bottom: -10px;
+}
+
+#bottom {
+    background-color: rgb(245, 245, 245);
+    height: 35%;
+    /* border: 1px solid green; */
+}
+
+.btn-create-acct {
+    padding: 8px 35px;
+    background-color: #596d48;
+    border: none;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    margin: 5%;
+}
+
+#bottom p {
+    font-size: .8rem;
+    margin-left: 5%;
+}
+
+.log-in-link {
+    text-decoration: none;
+    margin-left: 5px;
+    color: #596d48;
+    font-weight: 600;
+}
+
+.log-in-link:hover {
+    opacity: .7;
+    text-decoration: underline;
+}
+
